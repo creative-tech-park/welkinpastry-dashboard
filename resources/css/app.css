@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+        #printable-area, #printable-area * {
+            visibility: visible;
+        }
+        #printable-area {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .status-btn{
+            background: red !important;
+            color:white !important;
+        }
+    }
+}

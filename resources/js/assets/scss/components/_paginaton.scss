@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__right {
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &__item {
+                &--active {
+                    a {
+                        @apply bg-primary border border-primary text-white;
+                    }
+                }
+                &__link {
+                    padding: 8px 16px;
+                    color: #000;
+                    display: block;
+                    border: 1px solid #888;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

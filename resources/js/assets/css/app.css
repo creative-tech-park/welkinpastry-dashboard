@@ -1,0 +1,12 @@
+@import url('../fonts/open-sans.scss');
+@import url('../scss/app.scss');
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

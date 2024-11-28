@@ -1,0 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif !important; 
+}
+
+input[type='text'], input[type='number'], textarea{
+    &:focus {
+        @apply ring-0 border-primary shadow shadow-primary/40;
+    }
+}
+textarea:focus {
+    @apply ring-0 border-primary shadow shadow-primary/40;
+}
