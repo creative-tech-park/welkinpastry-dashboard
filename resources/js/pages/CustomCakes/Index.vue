@@ -38,7 +38,7 @@ onMounted(async () => await getData());
     <div class="max-w-5xl mx-auto p-8 bg-gray-50 rounded-lg shadow-lg my-10">
       <div class="flex justify-between items-center mb-8">
         <h2 class="text-3xl font-bold text-gray-800">Custom Cakes</h2>
-        <router-link to="/custom-cakes/create">
+        <!-- <router-link to="/custom-cakes/create">
           <button
             class="flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
           >
@@ -58,7 +58,7 @@ onMounted(async () => await getData());
             </svg>
             Add Record
           </button>
-        </router-link>
+        </router-link> -->
       </div>
 
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -70,9 +70,9 @@ onMounted(async () => await getData());
           >
             <tr>
               <th scope="col" class="px-6 py-3">Customized Cake Name</th>
-              <th scope="col" class="px-6 py-3">Price</th>
+              <!-- <th scope="col" class="px-6 py-3">Price</th> -->
               <th scope="col" class="px-6 py-3">Image</th>
-              <th scope="col" class="px-6 py-3">Action</th>
+              <!-- <th scope="col" class="px-6 py-3">Action</th> -->
             </tr>
           </thead>
           <tbody>
@@ -101,7 +101,7 @@ onMounted(async () => await getData());
                 >
                   {{ item.name }}
                 </th>
-                <td class="px-6 py-4">{{ item.price }}</td>
+                <!-- <td class="px-6 py-4">{{ item.price }}</td> -->
                 <td class="px-6 py-4">
                   <img
                     :src="item.image_url"
@@ -110,14 +110,14 @@ onMounted(async () => await getData());
                   />
                 </td>
 
-                <td class="px-6 py-4">
+                <!-- <td class="px-6 py-4">
                   <button
                     @click="deleteData(item.id)"
                     class="text-red-500 hover:text-red-700"
                   >
                     <i class="fa fa-trash" aria-hidden="true"></i>
                   </button>
-                </td>
+                </td> -->
               </tr>
             </template>
           </tbody>
